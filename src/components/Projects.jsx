@@ -2,13 +2,13 @@ import React from 'react'
 import entornovirtual from '../images/entornovirtual.jpg'
 import energuate from '../images/energuate/image1.png'
 import alysystem from '../images/alysystem/alysystem2.png'
-import ultraval from '../images/alysystem/alysystem3.png'
+import ultraval from '../images/ultraval/ultraval1.png'
 // import Laptop from '../assets/laptop.jpg'
 
 const SingleProject = ({ image, title, description, resume, }) => {
   return (
-    <div className='max-w-[1240px] mx-auto grid md:grid-cols-2 flex flex-col'>
-      <img className='w-[500px] my-auto my-10 rounded-lg shadow-xl dark:shadow-gray-800' src={image} alt='/' />
+    <div className='max-w-[1240px] mx-auto my-10 grid md:grid-cols-2 flex flex-col'>
+      <img className='w-[500px] my-auto my-10 object-cover h-48 w-96 rounded-lg shadow-xl dark:shadow-gray-800' src={image} alt='/' />
 
       <div className='flex flex-col justify-center'>
         <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>{title}</h1>
@@ -16,8 +16,6 @@ const SingleProject = ({ image, title, description, resume, }) => {
         <p className='text-[#00df9a] font-bold'>{description}</p>
 
         <p>{resume}</p>
-
-        {/* <button className='bg-black text-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Get Started</button> */}
       </div>
     </div>
   )

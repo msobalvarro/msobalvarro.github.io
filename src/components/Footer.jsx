@@ -1,0 +1,34 @@
+import React from 'react'
+
+const Footer = () => {
+  return (
+    <footer className='bg-gray-800 text-white py-8'>
+      <div className='container mx-auto flex items-center justify-between px-4'>
+        <div className='flex items-center'>
+          <img
+            className='w-12 h-12 rounded-full shadow-lg mr-4'
+            src='https://lh3.googleusercontent.com/a/ACg8ocKF_0-eEXZPnCDQfEwSI4Z70SYlzyIqLQuqVozLZ6K6HfIH69k=s192-c-rg-br100' // Aquí debes reemplazar con la ruta de tu imagen
+            alt='Foto de perfil'
+          />
+          <div>
+            <h3 className='font-bold text-lg'>Samuel Sobalvarro</h3>
+            <p className='text-sm'>
+              Nacido en Managua, Nicaragua. Desarrollando aplicaciones desde 2016.
+            </p>
+          </div>
+        </div>
+        <div>
+          <p>Derechos de autor © 2024. Todos los derechos reservados.</p>
+
+          <div className="mt-4">
+            <a href="https://www.linkedin.com/in/samuel-sobalvarro-127227160/" className="text-gray-400 hover:text-white mr-4" target='_blank'>LinkedIn</a>
+            <a href="#" className="text-gray-400 hover:text-white mr-4">Twitter</a>
+            <a href="mailto:dev.msobalvarro@gmail.com" className="text-gray-400 hover:text-white">Correo Electrónico</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}
+
+export default Footer

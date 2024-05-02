@@ -1,10 +1,13 @@
 import React from 'react'
 import { ReactTyped } from 'react-typed'
+import reactImage from '../images/react-2.svg'
 
 const Hero = () => {
   return (
     <div className='text-white'>
       <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
+        <img className='object-scale-down h-48 w-48 self-center girar-animacion' src={reactImage} />
+
         <p className='text-[#00df9a] font-bold p-2'>
           DESARROLLADOR JAVASCRIPT FULLSTACK
         </p>
