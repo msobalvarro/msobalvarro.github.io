@@ -8,12 +8,12 @@ import ultraval from '../images/ultraval/ultraval1.png'
 const SingleProject = ({ image, title, description, resume, }) => {
   return (
     <div className='max-w-[1240px] mx-auto my-10 grid md:grid-cols-2 flex flex-col'>
-      <img className='w-[500px] my-auto my-10 object-cover h-48 w-96 rounded-lg shadow-xl dark:shadow-gray-800' src={image} alt='/' />
+      <img className='w-[500px] object-cover h-64 w-96 rounded-lg shadow-xl dark:shadow-gray-500' src={image} alt='/' />
 
       <div className='flex flex-col justify-center'>
-        <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>{title}</h1>
+        <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 uppercase'>{title}</h2>
 
-        <p className='text-[#00df9a] font-bold'>{description}</p>
+        <p className='text-[#318ca3] font-bold'>{description}</p>
 
         <p>{resume}</p>
       </div>
@@ -24,7 +24,10 @@ const SingleProject = ({ image, title, description, resume, }) => {
 
 const Projects = () => {
   return (
-    <div className='w-full bg-white py-16 px-4'>
+    <div className='py-16 px-4 flex flex-col'>
+      <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase'>
+        Proyectos relevantes
+      </h1>
 
       <SingleProject
         image={ultraval}

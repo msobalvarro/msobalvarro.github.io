@@ -11,14 +11,14 @@ const Footer = () => {
             alt='Foto de perfil'
           />
           <div>
-            <h3 className='font-bold text-lg'>Samuel Sobalvarro</h3>
+            <h3 className='font-bold text-lg text text-[#61dbfb]'>Samuel Sobalvarro</h3>
             <p className='text-sm'>
               Nacido en Managua, Nicaragua. Desarrollando aplicaciones desde 2016.
             </p>
           </div>
         </div>
         <div>
-          <p>Derechos de autor © 2024. Todos los derechos reservados.</p>
+          <p>Derechos de autor © {new Date().getFullYear}. Todos los derechos reservados.</p>
 
           <div className="mt-4">
             <a href="https://www.linkedin.com/in/samuel-sobalvarro-127227160/" className="text-gray-400 hover:text-white mr-4" target='_blank'>LinkedIn</a>
