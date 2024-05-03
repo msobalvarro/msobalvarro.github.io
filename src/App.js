@@ -4,6 +4,7 @@ import Projects from './components/Projects'
 import Footer from './components/Footer'
 import MarqueeIcons from './components/icons'
 import AboutMe from './components/AboutMe'
+import IframeSoundCloud from './components/Soundcloud'
 
 function App() {
   return (
@@ -11,13 +12,14 @@ function App() {
       <Hero />
 
       <AboutMe />
+      <MarqueeIcons />
       <div className='w-full bg-white'>
 
         <Projects />
+
+
+        <IframeSoundCloud />
       </div>
-
-      <MarqueeIcons />
-
       <Footer />
     </div>
   )
