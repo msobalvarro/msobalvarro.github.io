@@ -2,9 +2,10 @@
 import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
-import MarqueeIcons from './components/icons'
+import MarqueeIcons from './components/Icons'
 import AboutMe from './components/AboutMe'
 import IframeSoundCloud from './components/Soundcloud'
+import ProjectsDetail from './components/ProjectDetails'
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
 
         <Projects />
 
+        <hr />
 
-        <IframeSoundCloud />
+        <ProjectsDetail />
       </div>
       <Footer />
     </div>
