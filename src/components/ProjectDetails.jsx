@@ -5,7 +5,7 @@ import energuate6 from '../images/energuate/image6.png'
 
 const Detail = ({ images = [], title, description, links = [] }) => {
   return (
-    <div className='flex items-center'>
+    <div className='flex flex-col md:flex-row items-center'>
       <div className='overflow-x-auto whitespace-nowrap w-128'>
         <div className='flex'>
           {images.map((image, index) => (
