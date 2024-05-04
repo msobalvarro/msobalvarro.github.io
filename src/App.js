@@ -13,7 +13,7 @@ function App() {
       <Hero />
 
       <AboutMe />
-      <MarqueeIcons />
+      
       <div className='w-full bg-white'>
 
         <Projects />
@@ -21,6 +21,7 @@ function App() {
         <hr />
 
         <ProjectsDetail />
+        <MarqueeIcons />
       </div>
       <Footer />
     </div>
