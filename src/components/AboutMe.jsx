@@ -16,13 +16,6 @@ const AboutMe = () => {
             Desarrollador de páginas web desde 2015, experiencia en diseño de aplicaciones web y desarrollo de aplicaciones
             móviles desde 2017, desarrollador backend y consultor de datos desde 2019.
           </p>
-          <p className='mt-4 text-lg'>
-            Mi objetivo es superarme siempre en conocimiento y me encanta distraerme con la programación, en especial con <code>Javascript</code>.
-          </p>
-          <p className='mt-4 text-lg'>
-            En mi tiempo libre, disfruto mucho de cocinar, escuchar música, mezclar musica, hacer ejercicio y la meditación.
-            Siempre estoy buscando aprender nuevas cosas sobre música, cocina y habilidades en mi personalidad.
-          </p>
         </div>
       </div>
     </div>
