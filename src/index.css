@@ -1,6 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   background-color: #1f1f1f;
@@ -9,6 +9,22 @@ body {
 .girar-animacion {
   animation: girar 10s linear infinite;
   /* La animación girar dura 2 segundos y se repite infinitamente */
+}
+
+.bg-javascript  {
+  background-image: url('./images/javascript-logo.png');
+  overflow: visible;
+  background-position: 0px 5%;
+  background-size:  100px;
+  background-repeat: no-repeat;
+}
+
+.hover-image {
+  transition: all 0.2s ease;
+}
+
+.hover-image:hover {
+  transform: scale(1.1);
 }
 
 @keyframes girar {

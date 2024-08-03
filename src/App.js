@@ -4,7 +4,6 @@ import Projects from './components/Projects'
 import Footer from './components/Footer'
 import MarqueeIcons from './components/Icons'
 import AboutMe from './components/AboutMe'
-import IframeSoundCloud from './components/Soundcloud'
 import ProjectsDetail from './components/ProjectDetails'
 
 function App() {

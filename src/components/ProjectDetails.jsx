@@ -8,8 +8,8 @@ const Detail = ({ images = [], title, description, links = [] }) => {
     <div className='flex flex-col md:flex-row items-center'>
       <div className='overflow-x-auto whitespace-nowrap w-128'>
         <div className='flex'>
-          {images.map((image, index) => (
-            <img src={image} alt={`Image ${index}`} key={index} className='mr-4 object-cover h-96' />
+          {images.map((image) => (
+            <img src={image} alt='detail' key={crypto.randomUUID()} className='mr-4 object-cover h-96' />
           ))}
         </div>
       </div>
@@ -19,9 +19,9 @@ const Detail = ({ images = [], title, description, links = [] }) => {
         <p className='text-gray-600'>{description}</p>
 
         <div className='mt-4 space-x-4 flex justify-items-center w-full bg-gray p-10'>
-          {links.map((link, index) => (
-            <a href={link.url} key={index} target='_blank'>
-              <button className='bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded'>
+          {links.map((link) => (
+            <a rel='noreferrer' href={link.url} key={crypto.randomUUID()} target='_blank'>
+              <button className='bg-slate-500 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded'>
                 {link.text}
               </button>
             </a>

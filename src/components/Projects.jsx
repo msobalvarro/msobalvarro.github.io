@@ -3,12 +3,13 @@ import entornovirtual from '../images/entornovirtual.jpg'
 import energuate from '../images/energuate/image1.png'
 import alysystem from '../images/alysystem/alysystem2.png'
 import ultraval from '../images/ultraval/ultraval1.png'
+import sessiones from '../images/triagons/sesiones-1.png'
 // import Laptop from '../assets/laptop.jpg'
 
 const SingleProject = ({ image, title, description, resume, }) => {
   return (
     <div className='max-w-[1240px] mx-auto my-10 grid md:grid-cols-2 flex flex-col'>
-      <img className='w-[500px] object-cover h-64 w-96 rounded-lg shadow-xl dark:shadow-gray-500' src={image} alt='/' />
+      <img className='hover-image w-[500px] object-cover h-64 w-96 rounded-lg shadow-xl dark:shadow-gray-400' src={image} alt='/' />
 
       <div className='flex flex-col justify-center'>
         <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 uppercase'>{title}</h2>
@@ -28,6 +29,16 @@ const Projects = () => {
       <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase'>
         Proyectos relevantes
       </h1>
+
+      <SingleProject
+        image={sessiones}
+        title='Triagons (Seis Treinta)'
+        description='Desarrollador Javascript Fullstack'
+        resume={`
+          Participe en el desarrollode de la plataforma Sesiones, 
+          donde participe en el desarrollo frontend con React y backend con node (express) y graphql.
+        `}
+      />
 
       <SingleProject
         image={ultraval}

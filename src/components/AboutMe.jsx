@@ -9,12 +9,16 @@ const AboutMe = () => {
         </h2>
         <div className='mt-6 text-gray-700'>
           <p className='text-lg'>
-            ¡Hola! Soy Samuel Sobalvarro, un desarrollador de aplicaciones apasionado por la programación.
+            Soy Merling Samuel Sobalvarro Reyes, un desarrollador de aplicaciones apasionado por la programación.
           </p>
 
           <p className='mt-4 text-lg'>
             Desarrollador de páginas web desde 2015, experiencia en diseño de aplicaciones web y desarrollo de aplicaciones
             móviles desde 2017, desarrollador backend y consultor de datos desde 2019.
+          </p>
+
+          <p className='mt-4 text-lg'>
+          He participado en diferentes proyectos como el desarrollo de oficinas virtuales, plataformas de administración, plataformas de datos, y muchos más.
           </p>
         </div>
       </div>
