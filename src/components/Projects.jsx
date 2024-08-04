@@ -33,7 +33,7 @@ const Projects = () => {
       <SingleProject
         image={sessiones}
         title='Triagons (Seis Treinta)'
-        description='Desarrollador Javascript Fullstack'
+        description='Desarrollador Javascript Full Stack'
         resume={`
           Participe en el desarrollode de la plataforma Sesiones, 
           donde participe en el desarrollo frontend con React y backend con node (express y graphql).
@@ -43,7 +43,7 @@ const Projects = () => {
       <SingleProject
         image={ultraval}
         title='Traslado de Valores de Nicaragua'
-        description='Desarrollador Javascript Fullstack'
+        description='Desarrollador Javascript Full Stack'
         resume={`
           Desarrollé una aplicación móvil administrativa que reemplaza todo el papeleo formal de remesas a
           digitalización de datos, tambien desarrollé plataforma de clientes de traslado de valores de Nicaragua, esta plataforma le permite al cliente Crear una
@@ -54,7 +54,7 @@ const Projects = () => {
       <SingleProject
         image={alysystem}
         title='Alysystem'
-        description='Desarrollador Javascript Fullstack'
+        description='Desarrollador Javascript Full Stack'
         resume={`
         Participación en el desarrollo de la plataforma de inversiones Speedtradings, esta plataforma requería un sistema de
         administración de la plataforma de usuario (Plataforma Web y Android), encargado del desarrollo

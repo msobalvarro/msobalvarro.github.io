@@ -30,7 +30,7 @@ const Hero = () => {
       </div>
 
       <p className='font-bold'>
-        DESARROLLADOR JAVASCRIPT FULLSTACK
+        DESARROLLADOR JAVASCRIPT FULL STACK
       </p>
 
       <button className='bg-[#61dbfb] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>
