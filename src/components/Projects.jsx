@@ -36,7 +36,7 @@ const Projects = () => {
         description='Desarrollador Javascript Fullstack'
         resume={`
           Participe en el desarrollode de la plataforma Sesiones, 
-          donde participe en el desarrollo frontend con React y backend con node (express) y graphql.
+          donde participe en el desarrollo frontend con React y backend con node (express y graphql).
         `}
       />
 

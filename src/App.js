@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import MarqueeIcons from './components/Icons'
 import AboutMe from './components/AboutMe'
 import ProjectsDetail from './components/ProjectDetails'
+import { ChartInformation } from './components/Charts'
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
       <Hero />
 
       <AboutMe />
-      
+
       <div className='w-full bg-white'>
 
         <Projects />
@@ -20,6 +21,9 @@ function App() {
         <hr />
 
         <ProjectsDetail />
+
+        <ChartInformation />
+
         <MarqueeIcons />
       </div>
       <Footer />
