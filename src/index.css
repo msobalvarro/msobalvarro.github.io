@@ -2,6 +2,10 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #1f1f1f;
 }
@@ -11,11 +15,11 @@ body {
   /* La animación girar dura 2 segundos y se repite infinitamente */
 }
 
-.bg-javascript  {
+.bg-javascript {
   background-image: url('./images/javascript-logo.png');
   overflow: visible;
   background-position: 0px 5%;
-  background-size:  100px;
+  background-size: 100px;
   background-repeat: no-repeat;
 }
 
@@ -25,6 +29,10 @@ body {
 
 .hover-image:hover {
   transform: scale(1.1);
+}
+
+.jump-animation {
+  animation: pingpong 2s infinite;
 }
 
 svg text {
@@ -40,5 +48,19 @@ svg text {
   to {
     transform: rotate(360deg);
     /* Termina la rotación en 360 grados (una vuelta completa) */
+  }
+}
+
+@keyframes pingpong {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

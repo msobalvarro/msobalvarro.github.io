@@ -1,6 +1,6 @@
 export const AboutMe = () => {
   return (
-    <div className='bg-gray-100 py-16 px-4 sm:px-6 lg:px-8'>
+    <div className='bg-gray-100 py-16 px-4 sm:px-6 lg:px-8' id='aboutme'>
       <div className='max-w-3xl mx-auto'>
         <h2 className='text-3xl font-extrabold text-gray-900 sm:text-4xl'>
           Acerca de mí
@@ -16,7 +16,7 @@ export const AboutMe = () => {
           </p>
 
           <p className='mt-4 text-lg'>
-          He participado en diferentes proyectos como el desarrollo de oficinas virtuales, plataformas de administración, plataformas de datos, y muchos más.
+            He participado en diferentes proyectos como el desarrollo de oficinas virtuales, plataformas de administración, plataformas de datos, y muchos más.
           </p>
         </div>
       </div>

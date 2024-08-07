@@ -12,7 +12,7 @@ export const ChartInformation = () => {
         Habilidades y tecnologías.
       </h1>
 
-      <div class="gap-4 flex md:flex-row sm:flex-col justify-evenly">
+      <div className="gap-4 flex md:flex-row sm:flex-col justify-evenly">
         <div className='flex flex-col items-center gap-4'>
           <p className='text-2xl gap-2 text-gray-400 flex items-center justify-center'>
             <FaCode /> Frontend

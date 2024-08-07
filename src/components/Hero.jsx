@@ -1,5 +1,7 @@
-import { ReactTyped } from 'react-typed'
 import reactImage from '../images/react-2.svg'
+import { IoIosArrowDropdownCircle } from 'react-icons/io'
+import { ReactTyped } from 'react-typed'
+import { useWindowScroll } from '../hooks'
 
 const skillsDetails = [
   'Desarrollador Frontend',
@@ -9,8 +11,10 @@ const skillsDetails = [
 ]
 
 export const Hero = () => {
+  const { scrollPosition } = useWindowScroll()
+
   return (
-    <div className='max-w-[800px] w-full h-screen mx-auto text-center flex flex-col justify-center text-white bg-javascript'>
+    <div className='relative max-w-[800px] w-full h-screen mx-auto text-center flex flex-col justify-center text-white bg-javascript'>
       <img alt='react' className='object-scale-down h-48 w-48 self-center girar-animacion' src={reactImage} />
 
       <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold p-0'>
@@ -38,6 +42,12 @@ export const Hero = () => {
           MAS INFORMACIÓN
         </a>
       </button>
+
+      {scrollPosition.y === 0 && (
+        <button className='jump-animation fixed bottom-20 left-1/2 text-gray-800 p-5 rounded-full shadow'>
+          <a href='#aboutme'><IoIosArrowDropdownCircle size={64} className='absolute' style={{ left: '-50%' }} color='#CCCCCC50' /></a>
+        </button>
+      )}
     </div>
   )
 }
