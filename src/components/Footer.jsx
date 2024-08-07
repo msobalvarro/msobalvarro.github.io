@@ -22,7 +22,7 @@ export const Footer = () => {
 
           <div className='mt-4'>
             <a rel='noreferrer' href='https://www.linkedin.com/in/samuel-sobalvarro-127227160/' className='text-gray-400 hover:text-white mr-4' target='_blank'>LinkedIn</a>
-            <a rel='noreferrer' href='https://drive.google.com/file/d/1fb3GrIGErPOeugANgOwDWIquApqFkwll/view?usp=drive_link' target='_blank' className='text-gray-400 hover:text-white mr-4'>Hoja de Vida</a>
+            <a rel='noreferrer' href='https://drive.google.com/file/d/1fb3GrIGErPOeugANgOwDWIquApqFkwll/view?usp=sharing' target='_blank' className='text-gray-400 hover:text-white mr-4'>Hoja de Vida</a>
             <a rel='noreferrer' href='https://github.com/msobalvarro' target='_blank' className='text-gray-400 hover:text-white mr-4'>GitHub</a>
 
             <a href='mailto:dev.msobalvarro@gmail.com' className='text-gray-400 hover:text-white'>Correo Electrónico</a>

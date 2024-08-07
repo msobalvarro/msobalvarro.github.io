@@ -34,7 +34,7 @@ export const Hero = () => {
       </p>
 
       <button className='bg-[#61dbfb] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>
-        <a rel='noreferrer' href='https://drive.google.com/file/d/1fb3GrIGErPOeugANgOwDWIquApqFkwll/view?usp=drive_link' target='_blank'>
+        <a rel='noreferrer' href='https://drive.google.com/file/d/1fb3GrIGErPOeugANgOwDWIquApqFkwll/view?usp=sharing' target='_blank'>
           MAS INFORMACIÓN
         </a>
       </button>
