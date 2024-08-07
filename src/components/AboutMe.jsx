@@ -1,6 +1,4 @@
-import React from 'react'
-
-const AboutMe = () => {
+export const AboutMe = () => {
   return (
     <div className='bg-gray-100 py-16 px-4 sm:px-6 lg:px-8'>
       <div className='max-w-3xl mx-auto'>
@@ -25,5 +23,3 @@ const AboutMe = () => {
     </div>
   )
 }
-
-export default AboutMe

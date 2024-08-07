@@ -27,6 +27,10 @@ body {
   transform: scale(1.1);
 }
 
+svg text {
+  font-size: 1em;
+}
+
 @keyframes girar {
   from {
     transform: rotate(0deg);

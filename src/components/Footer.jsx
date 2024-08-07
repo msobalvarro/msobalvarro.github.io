@@ -1,9 +1,7 @@
-import React from 'react'
-
-const Footer = () => {
+export const Footer = () => {
   return (
-    <footer className='bg-gray-800 text-white py-8 px-5'>
-      <div className='container flex justify-between'>
+    <footer className='bg-gray-800 flex justify-center text-white py-8 px-5'>
+      <div className='container flex sm:flex-col justify-between'>
         <div className='flex flex-col md:flex-row items-center justify-between'>
           <div className='flex items-center mb-4 md:mb-0'>
             <img
@@ -34,5 +32,3 @@ const Footer = () => {
     </footer>
   )
 }
-
-export default Footer

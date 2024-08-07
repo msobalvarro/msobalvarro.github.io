@@ -33,11 +33,11 @@ const Detail = ({ images = [], title, description, links = [] }) => {
 }
 
 
-const ProjectsDetail = () => {
+export const ProjectsDetail = () => {
   return (
     <div className='bg-gray-100 py-16 px-4 sm:px-6 lg:px-8'>
       <div className='max-w-[1024px] w-full h-screen mx-auto text-center flex flex-col justify-center text-white'>
-        <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase text-black'>
+        <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase text-black mb-10'>
           Proyectos Públicos
         </h1>
 
@@ -60,5 +60,3 @@ const ProjectsDetail = () => {
     </div>
   )
 }
-
-export default ProjectsDetail

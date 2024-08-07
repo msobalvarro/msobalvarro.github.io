@@ -23,7 +23,7 @@ const SingleProject = ({ image, title, description, resume, }) => {
 }
 
 
-const Projects = () => {
+export const Projects = () => {
   return (
     <div className='py-16 px-4 flex flex-col'>
       <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase'>
@@ -97,5 +97,3 @@ const Projects = () => {
     </div>
   )
 }
-
-export default Projects

@@ -8,7 +8,7 @@ const skillsDetails = [
   'Diseñador UX/UI',
 ]
 
-const Hero = () => {
+export const Hero = () => {
   return (
     <div className='max-w-[800px] w-full h-screen mx-auto text-center flex flex-col justify-center text-white bg-javascript'>
       <img alt='react' className='object-scale-down h-48 w-48 self-center girar-animacion' src={reactImage} />
@@ -41,5 +41,3 @@ const Hero = () => {
     </div>
   )
 }
-
-export default Hero
