@@ -74,9 +74,9 @@ export const ChartInformation = () => {
               Sequalize: 'Sequalize',
               Graphql: 'Graphql',
               Prisma: 'Prisma',
+              Mongodb: 'Mongodb',
             }}
             data={[
-              // data
               {
                 data: {
                   Node: 0.8,
@@ -87,7 +87,8 @@ export const ChartInformation = () => {
                   Sql: 0.5,
                   Sequalize: 0.7,
                   Graphql: 0.6,
-                  Prisma: 0.4,
+                  Prisma: 0.6,
+                  Mongodb: 0.5,
                 },
                 meta: { color: '#1f2937' }
               },
