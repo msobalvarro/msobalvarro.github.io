@@ -11,8 +11,7 @@ export const AboutMe = () => {
           </p>
 
           <p className='mt-4 text-lg'>
-            Desarrollador de páginas web desde 2015, experiencia en diseño de aplicaciones web y desarrollo de aplicaciones
-            móviles desde 2017, desarrollador backend y consultor de datos desde 2019.
+            Soy Full Stack Javascript con más de 7 años de experiencia en desarrollo de aplicaciones web y móviles, así como en diseño y consultoría de datos. Mi stack técnico incluye principalmente React y Nodejs. Mi objetivo es aplicar mis habilidades en proyectos desafiantes en la industria digital, destacando mi liderazgo, comunicación y atención al detalle para lograr un crecimiento continuo.
           </p>
 
           <p className='mt-4 text-lg'>
