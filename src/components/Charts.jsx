@@ -6,7 +6,7 @@ import 'react-svg-radar-chart/build/css/index.css'
 
 export const ChartInformation = () => {
   return (
-    <div className='py-16 px-4 sm:px-6 lg:px-8'>
+    <div className='py-16 px-4 sm:px-6 lg:px-8 overflow-auto'>
 
       <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase text-center mb-10'>
         Habilidades y tecnologías.
