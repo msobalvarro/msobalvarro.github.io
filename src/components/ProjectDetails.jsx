@@ -11,7 +11,7 @@ import { PhotoProvider, PhotoView } from 'react-photo-view'
 const Detail = ({ images = [], title, description, links = [] }) => {
   return (
     <div className='flex flex-col gap-4 items-center bg-black/[0.2] backdrop-blur p-4 rounded'>
-      <div className='overflow-x-auto whitespace-nowrap w-128 bg-gray-800 p-4 rounded'>
+      <div className='overflow-x-auto whitespace-nowrap w-128 p-4 rounded'>
         <div className='flex'>
           <PhotoProvider>
             {images.map((image) => (
@@ -45,7 +45,7 @@ const Detail = ({ images = [], title, description, links = [] }) => {
 export const PublicProjects = () => {
   return (
     <div className='py-16 px-4 sm:px-6 lg:px-8'>
-      <div className='max-w-[1024px] w-full h-screen mx-auto text-center flex flex-col justify-center text-white'>
+      <div className='max-w-[1024px] w-full mx-auto text-center flex flex-col justify-center text-white'>
         <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase text-black mb-10'>
           Proyectos Públicos
         </h1>
@@ -67,7 +67,6 @@ export const PublicProjects = () => {
             description='Puedes descagar la aplicación en ambas plataformas, Oficina comercial para gestiones comerciales'
             images={[energuate3, energuate6, energuate4]} />
 
-          <hr />
 
           <Detail
             title='F8 Technologies'

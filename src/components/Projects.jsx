@@ -4,35 +4,71 @@ import energuate from '../images/energuate/image1.png'
 import alysystem from '../images/alysystem/alysystem2.png'
 import ultraval from '../images/ultraval/ultraval1.png'
 import sessiones from '../images/triagons/sesiones-1.png'
+import f8 from '../images/f8/f8-1.png'
+import autex from '../images/autex/autex-1.png'
+import customdigimedia from '../images/customdigimedia/customdigimedia-1.png'
 import { PhotoProvider, PhotoView } from 'react-photo-view'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 // import Laptop from '../assets/laptop.jpg'
 
 const SingleProject = ({ image, title, description, resume, }) => {
   return (
-    <PhotoProvider>
-      <div className='max-w-[1240px] mx-auto my-10 grid md:grid-cols-2 flex-col space-y-4 items-center'>
-        <PhotoView src={image}>
-          <img className='hover:scale-110 transition w-full md:w-[500px] object-cover h-64 rounded-lg dark:shadow-gray-400' src={image} alt='/' />
-        </PhotoView>
+    <AnimationOnScroll animateIn='animate__fadeInUp'>
 
-        <div className='flex flex-col justify-center'>
-          <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 uppercase text-white'>{title}</h2>
+      <PhotoProvider>
+        <div className='max-w-[1240px] mx-auto my-10 grid md:grid-cols-2 flex-col space-y-4 items-center'>
+          <PhotoView src={image}>
+            <img className='hover:scale-110 transition w-full md:w-[500px] object-cover h-64 rounded-lg dark:shadow-gray-400' src={image} alt='/' />
+          </PhotoView>
 
-          <p className='text-[#266878] font-bold'>{description}</p>
+          <div className='flex flex-col justify-center'>
+            <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 uppercase text-white'>{title}</h2>
 
-          <p className='text-white'>{resume}</p>
+            <p className='text-[#4dcbeb] font-bold'>{description}</p>
+
+            <p className='text-white'>{resume}</p>
+          </div>
         </div>
-      </div>
-    </PhotoProvider>
+      </PhotoProvider>
+    </AnimationOnScroll>
   )
 }
 
 export const Projects = () => {
   return (
     <div className='py-16 px-4 flex flex-col'>
-      <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase'>
+      <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase text-white'>
         Proyectos relevantes
       </h1>
+
+      <SingleProject
+        image={autex}
+        title='Autex'
+        description='Proyecto Propio'
+        resume={`
+          Desarrollo del proyecto Autex, este sistema esta dirigido a empresas talleres automotrices, sistema de automatizacion
+          de procesos, lo cual permite organizar ordenes de servicio, clientes, facturas, estado de mantenimiento del vehiculo, entre otras funciones
+        `}
+      />
+
+      <SingleProject
+        image={f8}
+        title='F8 Technologies'
+        description='Desarrollador Javascript Full Stack'
+        resume={`
+          Desarrollo de página web de la empresa F8 Technologies, junto a su aplicaciòn móvil de administración,
+          esta app administra productos, servicios mensajes y todo lo relacionado con configuraciones del sitio web F8
+        `}
+      />
+
+      <SingleProject
+        image={customdigimedia}
+        title='Custom Digi Media'
+        description='Sitio Web'
+        resume={`
+          Diseño de sitio web para la empresa Custom Digi Media, se diseño el sitio web con sus funcionalidades y especificaciones que el cliente detalló.
+        `}
+      />
 
       <SingleProject
         image={sessiones}

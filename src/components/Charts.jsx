@@ -6,15 +6,15 @@ import 'react-svg-radar-chart/build/css/index.css'
 
 export const ChartInformation = () => {
   return (
-      <div className='py-16 px-4 sm:px-6 lg:px-8 overflow-auto bg-gray-500'>
+      <div className='py-16 px-4 sm:px-6 lg:px-8 overflow-auto bg-gray-100'>
 
-        <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase text-center mb-10'>
+        <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase text-center mb-10 text-[#2d6572]'>
           Habilidades y tecnologías.
         </h1>
 
-        <div className="gap-4 flex md:flex-row sm:flex-col justify-evenly">
+        <div className="gap-4 flex flex-col space-y-6 md:flex-row sm:flex-col justify-evenly">
           <div className='flex flex-col items-center gap-4'>
-            <p className='text-2xl gap-2 text-gray-400 flex items-center justify-center'>
+            <p className='text-2xl gap-2 text-[#2d6572] flex items-center justify-center'>
               <FaCode /> Frontend
             </p>
 
@@ -51,7 +51,7 @@ export const ChartInformation = () => {
                     Tailwind: 0.5,
                     GoogleMaps: 0.7,
                   },
-                  meta: { color: '#1f2937' }
+                  meta: { color: '#2d6572' }
                 },
               ]}
               size={480}
@@ -59,7 +59,7 @@ export const ChartInformation = () => {
           </div>
 
           <div className='flex flex-col items-center gap-4'>
-            <p className='text-2xl gap-2 text-gray-400 flex items-center justify-center'>
+            <p className='text-2xl gap-2 text-[#2d6572] flex items-center justify-center'>
               <FaServer /> Backend
             </p>
 
@@ -90,7 +90,7 @@ export const ChartInformation = () => {
                     Prisma: 0.6,
                     Mongodb: 0.5,
                   },
-                  meta: { color: '#1f2937' }
+                  meta: { color: '#2d6572' }
                 },
               ]}
               size={480}
