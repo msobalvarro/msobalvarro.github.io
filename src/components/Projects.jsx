@@ -4,24 +4,28 @@ import energuate from '../images/energuate/image1.png'
 import alysystem from '../images/alysystem/alysystem2.png'
 import ultraval from '../images/ultraval/ultraval1.png'
 import sessiones from '../images/triagons/sesiones-1.png'
+import { PhotoProvider, PhotoView } from 'react-photo-view'
 // import Laptop from '../assets/laptop.jpg'
 
 const SingleProject = ({ image, title, description, resume, }) => {
   return (
-    <div className='max-w-[1240px] mx-auto my-10 grid md:grid-cols-2 flex flex-col'>
-      <img className='hover-image w-[500px] object-cover h-64 w-96 rounded-lg shadow-xl dark:shadow-gray-400' src={image} alt='/' />
+    <PhotoProvider>
+      <div className='max-w-[1240px] mx-auto my-10 grid md:grid-cols-2 flex-col space-y-4 items-center'>
+        <PhotoView src={image}>
+          <img className='hover:scale-110 transition w-full md:w-[500px] object-cover h-64 rounded-lg dark:shadow-gray-400' src={image} alt='/' />
+        </PhotoView>
 
-      <div className='flex flex-col justify-center'>
-        <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 uppercase'>{title}</h2>
+        <div className='flex flex-col justify-center'>
+          <h2 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2 uppercase text-white'>{title}</h2>
 
-        <p className='text-[#318ca3] font-bold'>{description}</p>
+          <p className='text-[#266878] font-bold'>{description}</p>
 
-        <p>{resume}</p>
+          <p className='text-white'>{resume}</p>
+        </div>
       </div>
-    </div>
+    </PhotoProvider>
   )
 }
-
 
 export const Projects = () => {
   return (

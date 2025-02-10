@@ -1,11 +1,11 @@
 export const AboutMe = () => {
   return (
-    <div className='bg-gray-100 py-16 px-4 sm:px-6 lg:px-8' id='aboutme'>
-      <div className='max-w-3xl mx-auto'>
-        <h2 className='text-3xl font-extrabold text-gray-900 sm:text-4xl'>
+    <div className='bg-[#397D8D70] backdrop-blur py-16 px-4 sm:px-6 lg:px-8 text-white' id='aboutme'>
+      <div className='max-w-3xl mx-auto flex flex-col gap-4'>
+        <h2 className='text-3xl font-extrabold sm:text-4xl'>
           Acerca de mí
         </h2>
-        <div className='mt-6 text-gray-700'>
+        <div>
           <p className='text-lg'>
             Soy Merling Samuel Sobalvarro Reyes, un desarrollador de aplicaciones apasionado por la programación.
           </p>

@@ -1,12 +1,12 @@
 export const Footer = () => {
   return (
-    <footer className='bg-gray-800 flex justify-center text-white py-8 px-5'>
+    <footer className='bg-[#0B181B] flex justify-center text-white py-8 px-5 border-t-2 border-[#266676]'>
       <div className='container flex justify-between'>
         <div className='flex flex-col md:flex-row items-center justify-between'>
           <div className='flex items-center mb-4 md:mb-0'>
             <img
               className='w-12 h-12 rounded-full shadow-lg mr-4'
-              src='https://lh3.googleusercontent.com/a/ACg8ocKF_0-eEXZPnCDQfEwSI4Z70SYlzyIqLQuqVozLZ6K6HfIH69k=s192-c-rg-br100' // Aquí debes reemplazar con la ruta de tu imagen
+              src='https://github.com/msobalvarro.png'
               alt='Foto de perfil'
             />
             <div>
