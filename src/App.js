@@ -3,7 +3,7 @@ import { Hero } from './components/Hero'
 import { Projects } from './components/Projects'
 import { Footer } from './components/Footer'
 import { AboutMe } from './components/AboutMe'
-import { PublicProjects } from './components/ProjectDetails'
+import { PublicProjects } from './components/PublicProjects'
 import { ChartInformation } from './components/Charts'
 import { Contributions } from './components/Contributions'
 
