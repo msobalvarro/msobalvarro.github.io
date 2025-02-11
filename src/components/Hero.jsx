@@ -14,7 +14,7 @@ export const Hero = () => {
   const { scrollPosition } = useWindowScroll()
 
   return (
-    <div className='animate__animated animate__fadeIn relative w-full h-screen mx-auto flex flex-col gap-4 items-center justify-center text-white'>
+    <div className='animate__animated animate__fadeIn relative w-full h-screen mx-auto flex flex-col gap-4 items-center justify-center text-center text-white'>
       <img alt='react' className='object-scale-down h-48 w-48 react-rotate' src={reactImage} />
 
       <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold p-0'>
@@ -22,9 +22,9 @@ export const Hero = () => {
       </h1>
 
       <div className='flex justify-center'>
-        <p className='md:text-4xl sm:text-3xl text-xl font-bold py-4'>
+        <p className='md:text-4xl sm:text-3xl text-xl py-4'>
           <ReactTyped
-            className='md:text-4xl sm:text-4xl text-xl md:pl-4 pl-2 font-light text-[#0B181B]'
+            className='md:text-4xl sm:text-4xl text-xl md:pl-4 pl-2 font-semibold text-[#61dbfb]'
             strings={skillsDetails}
             typeSpeed={120}
             backSpeed={140}

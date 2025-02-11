@@ -46,7 +46,7 @@ export const PublicProjects = () => {
   return (
     <div className='py-16 px-4 sm:px-6 lg:px-8'>
       <div className='max-w-[1024px] w-full mx-auto text-center flex flex-col justify-center text-white'>
-        <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase text-black mb-10'>
+        <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold md:py-6 self-center uppercase text-white mb-10'>
           Proyectos Públicos
         </h1>
 
