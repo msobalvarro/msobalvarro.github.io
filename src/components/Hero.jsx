@@ -24,7 +24,7 @@ export const Hero = () => {
       <div className='flex justify-center'>
         <p className='md:text-4xl sm:text-3xl text-xl py-4'>
           <ReactTyped
-            className='md:text-4xl sm:text-4xl text-xl md:pl-4 pl-2 font-semibold text-[#61dbfb]'
+            className='md:text-4xl sm:text-4xl text-xl md:pl-4 pl-2 font-semibold text-[#61dbfb] uppercase'
             strings={skillsDetails}
             typeSpeed={120}
             backSpeed={140}
