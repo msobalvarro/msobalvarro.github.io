@@ -70,13 +70,6 @@ export const Projects = () => {
         />
 
         <SingleProject
-          image={customdigimedia}
-          title='Custom Digi Media'
-          description='Sitio Web'
-          resume={`Diseño de sitio web para la empresa Custom Digi Media, pagina de multiservicios digitales.`}
-        />
-
-        <SingleProject
           image={sessiones}
           title='Triagons (Seis Treinta)'
           description='Desarrollador Javascript Full Stack'
