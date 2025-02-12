@@ -17,7 +17,7 @@ export const Hero = () => {
     <div className='animate__animated animate__fadeIn relative w-full h-screen mx-auto flex flex-col gap-4 items-center justify-center text-center text-white'>
       <img alt='react' className='object-scale-down h-48 w-48 react-rotate' src={reactImage} />
 
-      <h1 className='md:text-5xl sm:text-6xl text-4xl font-bold p-0'>
+      <h1 className='md:text-5xl sm:text-6xl text-6xl font-bold p-0 font-["Caveat"]'>
         SAMUEL SOBALVARRO
       </h1>
 
@@ -39,7 +39,7 @@ export const Hero = () => {
 
       <button className='bg-[#61dbfb] w-[200px] rounded-md font-medium py-3 text-black'>
         <a rel='noreferrer' href='https://drive.google.com/file/d/1fb3GrIGErPOeugANgOwDWIquApqFkwll/view?usp=sharing' target='_blank'>
-          MAS INFORMACIÓN
+          MÁS INFORMACIÓN
         </a>
       </button>
 
