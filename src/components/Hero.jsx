@@ -34,7 +34,7 @@ export const Hero = () => {
       </div>
 
       <p className='font-bold'>
-        DESARROLLADOR JAVASCRIPT FULL STACK
+        DESARROLLADOR FULL STACK JAVASCRIPT
       </p>
 
       <button className='bg-[#61dbfb] w-[200px] rounded-md font-medium py-3 text-black'>
