@@ -27,11 +27,9 @@ export const ChartInformation = () => {
                 Typescript: 'Typescript',
                 WebSocket: 'Socket',
                 Redux: 'Redux',
-                Lodash: 'Lodash',
-                Apollo: 'Apollo Client',
                 Bootstrap: 'Bootstrap',
                 MaterialUI: 'MUI X',
-                Tailwind: 'Tailwind css',
+                Tailwind: 'Tailwind',
                 GoogleMaps: 'Google Maps Api',
               }}
               data={[
@@ -44,17 +42,15 @@ export const ChartInformation = () => {
                     Typescript: 0.8,
                     WebSocket: 0.8,
                     Redux: 0.8,
-                    Lodash: 0.8,
-                    Apollo: 0.6,
+                    GoogleMaps: 0.7,
                     Bootstrap: 0.5,
                     MaterialUI: 0.5,
-                    Tailwind: 0.5,
-                    GoogleMaps: 0.7,
+                    Tailwind: 0.8,
                   },
                   meta: { color: '#2d6572' }
                 },
               ]}
-              size={480}
+              size={350}
             />
           </div>
 
@@ -70,8 +66,8 @@ export const ChartInformation = () => {
                 Jwt: 'JWT',
                 Auth0: 'Auth0',
                 Socket: 'Socket.io',
-                Sql: 'Sql',
                 Sequalize: 'Sequalize',
+                Sql: 'SQL',
                 Graphql: 'Graphql',
                 Prisma: 'Prisma',
                 Mongodb: 'Mongodb',
@@ -84,16 +80,16 @@ export const ChartInformation = () => {
                     Jwt: 0.8,
                     Auth0: 0.7,
                     Socket: 0.8,
-                    Sql: 0.5,
                     Sequalize: 0.7,
+                    Sql: 0.6,
                     Graphql: 0.6,
-                    Prisma: 0.6,
-                    Mongodb: 0.5,
+                    Prisma: 0.5,
+                    Mongodb: 0.8,
                   },
                   meta: { color: '#2d6572' }
                 },
               ]}
-              size={480}
+              size={350}
             />
           </div>
         </div>

@@ -6,6 +6,10 @@ import f8image1 from '../images/f8/f8-1.png'
 import f8Image2 from '../images/f8/f8-2.png'
 import f8Image3 from '../images/f8/f8-3.png'
 import f8Image4 from '../images/f8/f8-4.png'
+import autex1 from '../images/autex/autex-1.png'
+import autex2 from '../images/autex/autex-2.png'
+import autex3 from '../images/autex/autex-3.png'
+import autex4 from '../images/autex/autex-4.png'
 import { PhotoProvider, PhotoView } from 'react-photo-view'
 
 const Detail = ({ images = [], title, description, links = [] }) => {
@@ -16,16 +20,18 @@ const Detail = ({ images = [], title, description, links = [] }) => {
           <PhotoProvider>
             {images.map((image) => (
               <PhotoView src={image}>
-                <img src={image} alt='detail' key={crypto.randomUUID()} className='mr-4 object-cover h-96' />
+                <img src={image} alt='detail' key={crypto.randomUUID()} className='mr-4 object-cover h-96 cursor-pointer rounded' />
               </PhotoView>
             ))}
           </PhotoProvider>
         </div>
       </div>
 
-      <div className='ml-4 flex-auto'>
-        <h2 className='text-xl font-bold text-[#318ca3] uppercase'>{title}</h2>
-        <p className='text-white'>{description}</p>
+      <div className='ml-4 flex-auto relative'>
+        <div className='space-y-4'>
+          <h2 className='text-2xl font-bold text-[#5fbbcf] uppercase'>{title}</h2>
+          <p className='text-white'>{description}</p>
+        </div>
 
         <div className='space-x-4 flex items-center justify-center w-full bg-gray p-10'>
           {links.map((link) => (
@@ -53,8 +59,43 @@ export const PublicProjects = () => {
 
         <div className='flex flex-col gap-8'>
           <Detail
+            title='Autex – Sistema de Automatización para Talleres Automotrices'
+            links={[
+              {
+                url: 'mailto:dev.msobalvarro@gmail.com?subject=Sistema%20Autex&body=Hola!%20Me%20gustaría%20conseguir%20un%20usuario%20de%20Autex.',
+                text: 'Conseguir Autex'
+              }
+            ]}
+            description={`
+              Autex es un sistema diseñado para optimizar la gestión de talleres automotrices, 
+              tanto de vehículos como de motocicletas. 
+              
+              Proporciona un control detallado de todos los procesos operativos, 
+              permitiendo una administración eficiente de órdenes de servicio, presupuestos, 
+              clientes, facturación y seguimiento del estado de los vehículos en servicio. Además, 
+              facilita el monitoreo de ingresos y ganancias, ayudando a maximizar la rentabilidad y mejorar la 
+              experiencia del cliente.
+              `}
+            images={[autex1, autex2, autex3, autex4]} />
+
+          <Detail
+            title='F8 Technologies'
+            links={[
+              {
+                url: 'https://www.f8technologies.com',
+                text: 'Ir a Sitio'
+              }
+            ]}
+            description='Desarrollo del sitio web profesional de F8 Technologies, acompañado de una aplicación de administración que permite gestionar y optimizar su contenido y operaciones de manera eficiente.'
+            images={[f8image1, f8Image2, f8Image3, f8Image4]} />
+
+          <Detail
             title='Energuate Aplicaciones'
             links={[
+              {
+                url: 'https://oficinavirtual.energuate.com/mifactura',
+                text: 'Oficina Virtual'
+              },
               {
                 url: 'https://apps.apple.com/hn/app/energuate/id1440777870',
                 text: 'Ir a Appstore'
@@ -66,18 +107,6 @@ export const PublicProjects = () => {
             ]}
             description='Puedes descagar la aplicación en ambas plataformas, Oficina comercial para gestiones comerciales'
             images={[energuate3, energuate6, energuate4]} />
-
-
-          <Detail
-            title='F8 Technologies'
-            links={[
-              {
-                url: 'https://www.f8technologies.com',
-                text: 'Ir a Sitio'
-              }
-            ]}
-            description='Sitio web profesional de la empresa F8 Technologies junto a una app de administracion para el sitio'
-            images={[f8image1, f8Image2, f8Image3, f8Image4]} />
         </div>
       </div>
     </div>
